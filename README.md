@@ -2,7 +2,7 @@
 
 Shun Tsukamoto
 
-2025-02-08+09
+2025-03-09+09
 
 ## Introduction
 
@@ -21,7 +21,7 @@ This prompt document enables you to chat on general topics with NotebookLM.
 2. Deselecting any other materials in the source list (if applicable), ask to behave as a Conversational Bot (e.g., "Behave as a Conversational Bot.").
 3. Making sure that you have received the "I will behave as a Conversational Bot from now on." response, start to chat with the AI. You can select any deselected materials or add extra ones. However, I recommend that you select the Conversational Bot only because I cannot guarantee how compatible it and other materials are.
 
-### Custom Bot
+### Custom Bot.
 
 This prompt document turns NotebookLM into a chatbot that can be customized with the system messages provided in additional materials.
 1. Add the document to the notebook that you want to have a custom bot installed in.
@@ -29,9 +29,13 @@ This prompt document turns NotebookLM into a chatbot that can be customized with
 3. Making sure that you have received the "I will behave as a Custom Bot from now on." response, add or select the system message material(s) that you want to apply. You actually do not necessarily need to deselect those materials in the previous step. However, I recommend that you follow these steps to increase the success rate.
 4. Start to talk to the AI.
 
-## Copyright
+## Legal Notices
 
-The project maintainer (Shun Tsukamoto) has written this and the prompt documents, and retains all copyrights (which include the other relevant rights like the moral rights) therein. Please do not copy, share, or otherwise use the readme document unless that usage is permitted in the applicable law or in the Github Terms of Service. As for the use of the prompt documents, here are the conditions.
+I (Shun Tsukamoto) have founded this project, written this and the prompt documents, and been maintaining them.
+
+This project is available in the way of content sharing at my discretion and is not based on any contracts or other legal relationships. Please use any of the contributions in the project solely at your own risk. I am not liable for any troubles caused by your use of any content in the project, and I am also not responsible for the quality of each document written for the project.
+
+I retain all copyrights and other relevant rights (like the moral rights) in all documents written for this project. Please do not copy, share, or otherwise use the readme document unless that usage is permitted in the applicable law or in the Github Terms of Service. As for the use of the prompt documents, here are the conditions.
 - You are allowed to add the verbatim version of each prompt document to a notebook of yours on NotebookLM to use the feature described in the document for yourself.
 - You are allowed to modify each prompt document and add that modified version to a notebook of yours on NotebookLM to use the feature described in that version for yourself.
 - I have not determined the policy for the other usages of the prompt documents yet. At the moment, please do not copy, share, or otherwise use them unless that usage is permitted in this section, in the applicable law, or in the Github Terms of Service. I am not planning to permit copying-and-pasting any prompt document in other materials (please instead share the URL of this project).
