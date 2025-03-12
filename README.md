@@ -2,7 +2,7 @@
 
 Shun Tsukamoto
 
-2025-03-09+09
+2025-03-12+09
 
 ## Introduction
 
@@ -21,7 +21,7 @@ This prompt document enables you to chat on general topics with NotebookLM.
 2. Deselecting any other materials in the source list (if applicable), ask to behave as a Conversational Bot (e.g., "Behave as a Conversational Bot.").
 3. Making sure that you have received the "I will behave as a Conversational Bot from now on." response, start to chat with the AI. You can select any deselected materials or add extra ones. However, I recommend that you select the Conversational Bot only because I cannot guarantee how compatible it and other materials are.
 
-### Custom Bot.
+### Custom Bot
 
 This prompt document turns NotebookLM into a chatbot that can be customized with the system messages provided in additional materials.
 1. Add the document to the notebook that you want to have a custom bot installed in.
