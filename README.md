@@ -2,36 +2,45 @@
 
 Shun Tsukamoto
 
-2025-03-12+09
+2025-03-17+09
 
 ## Introduction
 
-This project aims to share prompt documents that help turn NotebookLM into a versatile bot of the types specified there. NotebookLM, developed and operated by Google, is an AI-powered assistant that specializes in analyzing materials provided beforehand and aligning all outputs with those materials. Nevertheless, once you add a document in this project to a notebook of yours and send a trigger messsage, NotebookLM will behave as a bot described in that added document.
+This project aims to share prompt documents that help turn NotebookLM into a versatile bot of the types specified there. NotebookLM, developed and operated by Google, is an AI-powered assistant that specializes in analyzing materials provided beforehand and aligning all outputs with those materials. Nevertheless, once you add a prompt document of your interest in this project to a notebook of yours and send one or a few trigger messsage(s), NotebookLM will behave as described in that prompt document.
 
-Please note that this is an experimental project. Although I have tested each document several times, I could not fix all unexpected responses, most of which are those summarizing that document or stating thinking processes. These responses are crucially related to how NotebookLM is expected to work and therefore appear to be difficult to avoid.
+The Versatile Bot Project supports both main modes of NotebookLM: the text chat mode and the Audio Overview mode. The "Bot" prompt document series is designed to characterize the response pattern of the AI in the text chat mode. The "Episode" prompt document series is designed to provide new usages of and/or modify the conversation style in the Audio Overview mode.
+
+Please note that this is an experimental project. Although I (Shun Tsukamoto) have tested each prompt document several times (except for the Chat Episode one, which I have not sufficiently tested yet), I could not fix all unexpected responses, most of which are those summarizing that prompt document and/or stating thinking processes. These responses are crucially related to how NotebookLM is expected to work, and therefore appear to be difficult to avoid.
 
 ## Prompt Documents
 
-Currently, this project consists of the following two prompt documents.
+This project currently consists of the following three prompt documents: two Bot prompt documents and an Episode prompt document.
 
 ### Conversational Bot
 
-This prompt document enables you to chat on general topics with NotebookLM.
-1. Add the document to the notebook that you want to chat in.
-2. Deselecting any other materials in the source list (if applicable), ask to behave as a Conversational Bot (e.g., "Behave as a Conversational Bot.").
-3. Making sure that you have received the "I will behave as a Conversational Bot from now on." response, start to chat with the AI. You can select any deselected materials or add extra ones. However, I recommend that you select the Conversational Bot only because I cannot guarantee how compatible it and other materials are.
+This prompt document enables you to talk on general topics with NotebookLM.
+1. Add the prompt document to the notebook that you want to chat in.
+2. Deselecting any other materials in the source list (if applicable), ask to behave as a Conversational Bot (e.g., *Behave as a Conversational Bot.*).
+3. Making sure that you have received the "I will behave as a Conversational Bot from now on." response, start to talk to the AI in the text chat mode. You can select any deselected materials or add extra ones. However, I recommend that you select the Conversational Bot prompt document only because I cannot guarantee how compatible it and other materials are.
 
 ### Custom Bot
 
 This prompt document turns NotebookLM into a chatbot that can be customized with the system messages provided in additional materials.
-1. Add the document to the notebook that you want to have a custom bot installed in.
-2. Deselecting any other materials in the source list (if applicable), ask to behave as a Custom Bot (e.g., "Behave as a Custom Bot.").
+1. Add the prompt document to the notebook that you want to have a custom bot installed in.
+2. Deselecting any other materials in the source list (if applicable), ask to behave as a Custom Bot (e.g., *Behave as a Custom Bot.*).
 3. Making sure that you have received the "I will behave as a Custom Bot from now on." response, add or select the system message material(s) that you want to apply. You actually do not necessarily need to deselect those materials in the previous step. However, I recommend that you follow these steps to increase the success rate.
-4. Start to talk to the AI.
+4. Start to talk to the AI in the text chat mode.
+
+### Chat Episode
+
+Being in the beta testing stage, this prompt document allows you to generate live streams on arbitrary topics of your interest with NotebookLM.
+1. Add the prompt document to the notebook that you want to set up a live stream in.
+2. Ensuring that no other materials exist in the source list, move to the Audio Overview section, press the Customize button, and generate an audio file with an extra request to follow the instructions stated in the prompt document (e.g., *Follow the instructions stated in the "Chat Episode" document as the prompt instead of discussing the document.*). Although the prompt document might work even if there are other materials included in the source list, I recommend that only the Chat Episode prompt document be added to the notebook. Please note that the audio file generated here itself does not necessarily contain a substantial conversation because the prompt document asks to wait for you to join the episode.
+3. Once the audio file is generated, move to the Interactive mode and join the episode while playing it. You can ask to talk on specific topics and/or (hopefully) to speak specific language. Moreover, as a nonnative English speaker, I hope that the prompt document helps learners practice English conversation by participating in the same session again and again.
 
 ## Legal Notices
 
-I (Shun Tsukamoto) have founded this project, written this and the prompt documents, and been maintaining them.
+I have founded this project, written this and the prompt documents, and been maintaining them.
 
 This project is available in the way of content sharing at my discretion and is not based on any contracts or other legal relationships. Please use any of the contributions in the project solely at your own risk. I am not liable for any troubles caused by your use of any content in the project, and I am also not responsible for the quality of each document written for the project.
 
