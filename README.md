@@ -2,7 +2,7 @@
 
 Shun Tsukamoto
 
-2025-05-04+09
+2025-05-06+09
 
 ## Introduction
 
@@ -20,29 +20,29 @@ This project currently consists of the following three prompt documents: two Bot
 
 This prompt document enables you to talk on general topics with NotebookLM.
 1. Add the prompt document to the notebook that you want to chat in.
-2. Deselecting any other materials in the source list (if applicable), ask to behave as a Conversational Bot (e.g., *Behave as a Conversational Bot.*).
+2. Deselecting any other materials in the source list (if applicable), ask to behave as a Conversational Bot (e.g., "Behave as a Conversational Bot.").
 3. Making sure that you have received the "I will behave as a Conversational Bot from now on." response, start to talk to the AI in the text chat mode. You can select any deselected materials or add extra ones. However, I recommend that you select the Conversational Bot prompt document only because I cannot guarantee how compatible it and other materials are.
 
 ### Custom Bot
 
 This prompt document turns NotebookLM into a chatbot that can be customized with the system messages provided in additional materials.
 1. Add the prompt document to the notebook that you want to have a custom bot installed in.
-2. Deselecting any other materials in the source list (if applicable), ask to behave as a Custom Bot (e.g., *Behave as a Custom Bot.*).
+2. Deselecting any other materials in the source list (if applicable), ask to behave as a Custom Bot (e.g., "Behave as a Custom Bot.").
 3. Making sure that you have received the "I will behave as a Custom Bot from now on." response, add or select the system message material(s) that you want to apply. You actually do not necessarily need to deselect those materials in the previous step. However, I recommend that you follow these steps to increase the success rate.
 4. Start to talk to the AI in the text chat mode.
 
 ### Chat Episode
 
-The Chat Episode prompt document was originally written before the Audio Overview mode started to cover non-English languages. While I have just modified this prompt document to update its language handling, please understand that the prompt document only supports English for now. The prompt document is also marked as a beta one for English until additional testing with the upgraded version of the Audio Overview mode is done.
+The Chat Episode prompt document was originally written before the Audio Overview mode started to cover non-English languages, and is usable in two different approaches. While I have not confirmed whether and how many non-English languages this prompt document works in, I am gradually getting sure that the prompt document can be used for Japanese audios generated in the second approach. As for the English language, the prompt document not surely but probably functions in both approaches.
 
 This prompt document allows you to generate live streams on arbitrary topics of your interest with NotebookLM.
 1. Add the prompt document to the notebook that you want to set up a live stream in.
-2. Deselecting any other materials in the source list (if applicable), move to the Audio Overview section, press the Customize button, and generate an audio file with an extra request to follow the instructions stated in the prompt document (e.g., *Follow the instructions stated in the "Chat Episode" document.*). Although the prompt document might work even if there are other materials included in the source list, I recommend that only the Chat Episode prompt document be added to the notebook. Please note that the audio file generated here itself does not necessarily contain a substantial conversation because the prompt document asks to wait for you to join the episode.
+2. Deselecting any other materials in the source list (if applicable), move to the Audio Overview section, press the Customize button, and generate an audio file with an extra request to follow the instructions stated in the prompt document (e.g., "Follow the instructions stated in the Chat Episode document."). Although the prompt document might work even if there are other materials included in the source list, I recommend that only the Chat Episode prompt document be added to the notebook. Please note that you need not worry too much about the content of the audio file generated here itself, as the next step suggests.
 3. Once the audio file is generated, move to the Interactive mode and join the episode while playing it. You can ask to talk on specific topics. Moreover, as a nonnative English speaker, I hope that the prompt document helps learners practice English conversation by participating in the same session again and again.
 
 In addition, by specifying your request(s) beforehand, this prompt document may be used to listen to arbitrary conversations with NotebookLM.
 1. Proceed with the first and second steps stated above before you generate an audio file.
-2. Besides the extra request mentioned above, add your request(s) on the topic(s?) as the listener's (e.g., *The listener is requesting the AI hosts to ...*) when generating an audio file.
+2. Besides the extra request mentioned above, add your request(s) on the topic(s?) as the listener's (e.g., "The listener is requesting ... ...") when generating an audio file.
 
 ## Legal Notices
 
@@ -61,4 +61,3 @@ I retain all copyrights and other relevant rights (like the moral rights) in all
 - [My profile on LinkedIn](https://www.linkedin.com/in/shuntsukamoto)
 - [My profile on Facebook](https://www.facebook.com/shun0t)
 - I also have an account on some other socials.
-- 
