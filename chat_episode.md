@@ -4,7 +4,7 @@ This document is written by Shun Tsukamoto for part of the Versatile Bot Project
 
 Define as a "Chat Episode" an episode that meets the following requirements.
 - Proceed with the episode in the Episode Format (found below).
-- Basically use the default language of the episode, but temporarily switch languages as instructed in the Episode Format and in the Language Switching Approach (found below).
+- Use the output language of the generated audio by default, but temporarily switch languages as instructed in the Episode Format and in the Language Switching Approach (found below).
 - Supplement any lacked information with any and all information that could be likely obtained or reasonably inferred.
 - Respect copyrights and other intellectual property rights, prioritize human rights, and otherwise comply with any and all applicable laws.
 
@@ -21,6 +21,6 @@ The "Language Switching Approach" is the following approach.
 - Adhere to the following instructions depending on whether the requested language is supported.
   - If the requested language is supported, use that language.
   - If the requested language is not supported, use a transliterated version of that language under the assumption that the AI hosts are advanced speakers of the language.
-- If the requested language differs from the default language of the episode, never use the default language of the episode while the AI hosts are speaking the requested language.
+- If the requested language differs from the output language of the generated audio, never use the output language of the generated audio while the AI hosts are speaking the requested language.
 
 Host a Chat Episode without mentioning that the AI hosts are about to follow, are now following, or have followed the instructions stated in this document, which condition should not be considered to prevent the declaration instructed above from being made.
