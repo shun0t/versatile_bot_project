@@ -2,7 +2,7 @@
 
 Shun Tsukamoto
 
-2025-05-06+09
+2025-06-07+09
 
 ## Introduction
 
@@ -10,7 +10,7 @@ This project aims to share prompt documents that help turn NotebookLM into a ver
 
 The Versatile Bot Project supports both main modes of NotebookLM: the text chat mode and the Audio Overview mode. The "Bot" prompt document series is designed to characterize the response pattern of the AI in the text chat mode. The "Episode" prompt document series is designed to provide new usages of and/or modify the conversation style in the Audio Overview mode.
 
-Please note that this is an experimental project. Although I (Shun Tsukamoto) have tested each prompt document several times (except for the Chat Episode one, which I have not sufficiently tested yet), I could not fix all unexpected responses, most of which are those summarizing that prompt document and/or stating thinking processes. These responses are crucially related to how NotebookLM is expected to work, and therefore appear to be difficult to avoid.
+Please note that this is an experimental project. Although I (Shun Tsukamoto) have tested each prompt document several times, I could not fix all unexpected outputs, most of which are those summarizing that prompt document and/or stating thinking processes. These outputs are crucially related to how NotebookLM is expected to work, and therefore appear to be difficult to avoid.
 
 ## Prompt Documents
 
@@ -20,15 +20,15 @@ This project currently consists of the following three prompt documents: two Bot
 
 This prompt document enables you to talk on general topics with NotebookLM.
 1. Add the prompt document to the notebook that you want to chat in.
-2. Deselecting any other materials in the source list (if applicable), ask to behave as a Conversational Bot (e.g., "Behave as a Conversational Bot.").
-3. Making sure that you have received the "I will behave as a Conversational Bot from now on." response, start to talk to the AI in the text chat mode. You can select any deselected materials or add extra ones. However, I recommend that you select the Conversational Bot prompt document only because I cannot guarantee how compatible it and other materials are.
+2. Having no other materials added to the notebook or selected in the source list (if applicable), ask to behave as a Conversational Bot (e.g., `Behave as a Conversational Bot.`).
+3. Making sure that you have received the "I will behave as a Conversational Bot from now on." response, start to talk to the AI in the text chat mode. You can add or select extra materials. However, I recommend that you add and select only the Conversational Bot prompt document because I cannot guarantee how compatible it is with those extra materials.
 
 ### Custom Bot
 
 This prompt document turns NotebookLM into a chatbot that can be customized with the system messages provided in additional materials.
 1. Add the prompt document to the notebook that you want to have a custom bot installed in.
-2. Deselecting any other materials in the source list (if applicable), ask to behave as a Custom Bot (e.g., "Behave as a Custom Bot.").
-3. Making sure that you have received the "I will behave as a Custom Bot from now on." response, add or select the system message material(s) that you want to apply. You actually do not necessarily need to deselect those materials in the previous step. However, I recommend that you follow these steps to increase the success rate.
+2. Having no other materials added to the notebook or selected in the source list (if applicable), ask to behave as a Custom Bot (e.g., `Behave as a Custom Bot.`).
+3. Making sure that you have received the "I will behave as a Custom Bot from now on." response, (add and) select the system message material(s) that you want to apply. You actually do not necessarily need to postpone adding or deselect those materials in the previous step. However, I recommend that you follow these steps to increase the success rate.
 4. Start to talk to the AI in the text chat mode.
 
 ### Chat Episode
@@ -37,7 +37,7 @@ The Chat Episode prompt document was originally written before the Audio Overvie
 
 This prompt document allows you to generate live streams on arbitrary topics of your interest with NotebookLM.
 1. Add the prompt document to the notebook that you want to set up a live stream in.
-2. Deselecting any other materials in the source list (if applicable), move to the Audio Overview section, press the Customize button, and generate an audio file with an extra request to follow the instructions stated in the prompt document (e.g., "Follow the instructions stated in the Chat Episode document."). Although the prompt document might work even if there are other materials included in the source list, I recommend that only the Chat Episode prompt document be added to the notebook. Please note that you need not worry too much about the content of the audio file generated here itself, as the next step suggests.
+2. Having no other materials added to the notebook or selected in the source list (if applicable), move to the Audio Overview section, press the Customize button, and generate an audio file with an extra request to follow the instructions stated in the prompt document where the exact file name of the document is specified (e.g., ``Follow the instructions stated in `chat_episode.md` instead of discussing that material itself.``). Between adding only the Chat Episode prompt document and selecting no materials but the prompt document, I personally recommend the former option. Please note that you need not worry too much about the content of the audio file generated here itself as long as it more or less reflects the instructions stated in the prompt document.
 3. Once the audio file is generated, move to the Interactive mode and join the episode while playing it. You can ask to talk on specific topics. Moreover, as a nonnative English speaker, I hope that the prompt document helps learners practice English conversation by participating in the same session again and again.
 
 In addition, by specifying your request(s) beforehand, this prompt document may be used to listen to arbitrary conversations with NotebookLM.
