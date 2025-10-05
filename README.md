@@ -2,38 +2,41 @@
 
 Shun Tsukamoto
 
-2025-06-07+09
+2025-10-05+09
 
 ## Introduction
 
-This project aims to share prompt documents that help turn NotebookLM into a versatile bot of the types specified there. NotebookLM, developed and operated by Google, is an AI-powered assistant that specializes in analyzing materials provided beforehand and aligning all outputs with those materials. Nevertheless, once you add a prompt document of your interest in this project to a notebook of yours and send one or a few trigger messsage(s), NotebookLM will behave as described in that prompt document.
+This project aims to share prompt documents that help turn NotebookLM into a versatile bot of the types specified there. NotebookLM, developed and operated by Google, is an AI-powered assistant that specializes in analyzing materials provided beforehand and aligning all outputs with those materials. Nevertheless, once you import a prompt document of your interest in this project to a notebook of yours and add or send one or a few trigger messsage(s), NotebookLM will behave as described in that prompt document.
 
-The Versatile Bot Project supports both main modes of NotebookLM: the text chat mode and the Audio Overview mode. The "Bot" prompt document series is designed to characterize the response pattern of the AI in the text chat mode. The "Episode" prompt document series is designed to provide new usages of and/or modify the conversation style in the Audio Overview mode.
+The Versatile Bot Project currently supports the text chat mode and the Audio Overview mode of NotebookLM. The "Bot" prompt document series is designed to characterize the response pattern of the AI in the text chat mode. The "Episode" prompt document series is designed to provide new usages of and/or modify the conversation style in the Audio Overview mode.
 
-Please note that this is an experimental project. Although I (Shun Tsukamoto) have tested each prompt document several times, I could not fix all unexpected outputs, most of which are those summarizing that prompt document and/or stating thinking processes. These outputs are crucially related to how NotebookLM is expected to work, and therefore appear to be difficult to avoid.
+Please note that this is an experimental project. Although I (Shun Tsukamoto) have tested each prompt document several times, I could not fix all unexpected outputs, most of which are those explaining how the AI is responding and/or summarizing that prompt document. These outputs are crucially related to how NotebookLM is expected to work, and therefore appear to be hard to avoid.
 
 ## Prompt Documents
 
-This project currently consists of the following three prompt documents: two Bot prompt documents and an Episode prompt document.
+This project now consists of the following three prompt documents: two Bot prompt documents and an Episode prompt document.
 
 ### Conversational Bot
 
 This prompt document enables you to talk on general topics with NotebookLM.
 1. Add the prompt document to the notebook that you want to chat in.
-2. Having no other materials added to the notebook or selected in the source list (if applicable), ask to behave as a Conversational Bot (e.g., `Behave as a Conversational Bot.`).
-3. Making sure that you have received the "I will behave as a Conversational Bot from now on." response, start to talk to the AI in the text chat mode. You can add or select extra materials. However, I recommend that you add and select only the Conversational Bot prompt document because I cannot guarantee how compatible it is with those extra materials.
+2. Having no other materials added to the notebook or selected in the source list (if applicable), apply one of the following settings.
+   - Configure the notebook to turn on a custom prompt and add `Behave as a Conversational Bot.` as the custom prompt.
+   - Ask `Behave as a Conversational Bot.` in the text chat mode, where you will receive an "I will behave as a Conversational Bot from now on." response.
+3. Start to talk to the AI in the text chat mode. You can add or select extra materials. However, I recommend that you add and select only the Conversational Bot prompt document because I cannot guarantee how compatible it is with those extra materials.
 
 ### Custom Bot
 
 This prompt document turns NotebookLM into a chatbot that can be customized with the system messages provided in additional materials.
-1. Add the prompt document to the notebook that you want to have a custom bot installed in.
-2. Having no other materials added to the notebook or selected in the source list (if applicable), ask to behave as a Custom Bot (e.g., `Behave as a Custom Bot.`).
-3. Making sure that you have received the "I will behave as a Custom Bot from now on." response, (add and) select the system message material(s) that you want to apply. You actually do not necessarily need to postpone adding or deselect those materials in the previous step. However, I recommend that you follow these steps to increase the success rate.
-4. Start to talk to the AI in the text chat mode.
+1. Add the prompt document and the system message material(s) to the notebook that you want to have a custom bot installed in.
+2. Having no other materials added to the notebook or selected in the source list (if applicable), apply one of the following settings.
+   - Configure the notebook to turn on a custom prompt and add `Behave as a Custom Bot.` as the custom prompt.
+   - Ask `Behave as a Custom Bot.` in the text chat mode, where you will receive an "I will behave as a Custom Bot from now on." response.
+3. Start to talk to the AI in the text chat mode. You can add or select extra materials, but I recommend as few of those as possible because those extra materials may also affect the behavior of the custom bot. In particular, I do not suggest using the prompt document and the Conversational Bot prompt document together.
 
 ### Chat Episode
 
-The Chat Episode prompt document was originally written before the Audio Overview mode started to cover non-English languages, and is usable in two different approaches. While I have not confirmed whether and how many non-English languages this prompt document works in, I am gradually getting sure that the prompt document can be used for Japanese audios generated in the second approach. As for the English language, the prompt document not surely but probably functions in both approaches.
+The Chat Episode prompt document was originally written before the Audio Overview mode started to cover non-English languages, and is usable in two different approaches. While I have not confirmed whether and how many non-English languages this prompt document works in, I am gradually getting sure that the prompt document can be used at least for Japanese audios generated in the second approach. As for the English language, the prompt document not surely but probably functions in both approaches.
 
 This prompt document allows you to generate live streams on arbitrary topics of your interest with NotebookLM.
 1. Add the prompt document to the notebook that you want to set up a live stream in.
@@ -59,5 +62,5 @@ I retain all copyrights and other relevant rights (like the moral rights) in all
 
 - [My profile on GitHub](https://github.com/shun0t)
 - [My profile on LinkedIn](https://www.linkedin.com/in/shuntsukamoto)
-- [My profile on Facebook](https://www.facebook.com/shun0t)
-- I also have an account on some other socials.
+- [My profile on X for my AI-related activities](https://x.com/_shun0t)
+- [My profile on Facebook for my AI-related activities](https://www.facebook.com/shun0t)
